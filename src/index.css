@@ -1,5 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #495E57; /* Original primary color */
+  --primary-color-text: #F4CE14; /* Lighter version using rgba */
+  --primary-color-dark: hsl(207, 70%, 40%); /* Darker version using hsl */
+  --font-primary: 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Georgia', serif;
+}
+
 body {
   margin: 0;
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
