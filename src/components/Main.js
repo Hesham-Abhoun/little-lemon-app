@@ -1,12 +1,15 @@
 import React from "react";
+import Specials from "./Specials"
+import CustomersSay from "./CustomersSay"
 import "./Main.css";
-import heroImage from "../assets/hero_image.jpg";
-import customerImage from "../assets/customer.png";
+import heroImage from "../assets/restauranfood.jpg";
+import reviews from '../data/reviews.json'
 import Mario_and_Adrian_A from "../assets/Mario_and_Adrian_A.jpg";
 import Mario_and_Adrian_b from "../assets/Mario_and_Adrian_b.jpg";
+import {Link} from 'react-router-dom'
 const Main = () => {
   return (
-    <main>
+     <main>
       <section className="hero">
         <div className="banner-text">
           <h1>Little Lemon</h1>
@@ -16,106 +19,28 @@ const Main = () => {
             exercitation. Dolor sint do nulla nisi enim. Nisi culpa proident
             occaecat elit magna culpa est nulla dolore.
           </p>
-          <button className="reserve_table">Reserve Table</button>
+          <Link to="/reservations" className="reserve_table">Reserve Table</Link>
         </div>
         <div className="banner-image">
+          <div className="hero-image">
           <img src={heroImage} alt="little lemon special" />
+          </div>
+         
         </div>
       </section>
-      <section className="special-items">
-        <div className="online-menu">
-          <span>Specials</span>
-          <a href="#online_menu">Online Menu</a>
-        </div>
-
-        <div className="menu-items">
-          <div className="menu-item">
-            <img src={heroImage} alt="product" />
-            <div className="item-details">
-              <span className="item-name">Grzzc Salad</span>
-              <span className="item-price">$20</span>
-            </div>
-            <p>
-              Ea incididunt enim enim sunt officia culpa nisi nostrud laboris.
-              Aliquip labore anim officia irure id consequat cupidatat do culpa.
-              Ullamco enim magna minim occaecat nulla. Duis exercitation aliqua
-              ut do est esse pariatur tempor anim ea pariatur sunt. Nisi ad aute
-              laborum cupidatat amet laborum aliquip in amet esse non ullamco
-              sit.
-            </p>
-            <a href="#order_delevery">Order a delevry
-              
-            </a>
-          </div>
-          <div className="menu-item">
-            <img src={heroImage} alt="product" />
-            <div className="item-details">
-              <span className="item-name">Grzzc Salad</span>
-              <span className="item-price">$20</span>
-            </div>
-            <p>
-              Ea incididunt enim enim sunt officia culpa nisi nostrud laboris.
-              Aliquip labore anim officia irure id consequat cupidatat do culpa.
-              Ullamco enim magna minim occaecat nulla. Duis exercitation aliqua
-              ut do est esse pariatur tempor anim ea pariatur sunt. Nisi ad aute
-              laborum cupidatat amet laborum aliquip in amet esse non ullamco
-              sit.
-            </p>
-            <a href="#order_delevery">Order delevry</a>
-          </div>
-          <div className="menu-item">
-            <img src={heroImage} alt="product" />
-            <div className="item-details">
-              <span className="item-name">Grzzc Salad</span>
-              <span className="item-price">$20</span>
-            </div>
-            <p>
-              Ea incididunt enim enim sunt officia culpa nisi nostrud laboris.
-              Aliquip labore anim officia irure id consequat cupidatat do culpa.
-              Ullamco enim magna minim occaecat nulla. Duis exercitation aliqua
-              ut do est esse pariatur tempor anim ea pariatur sunt. Nisi ad aute
-              laborum cupidatat amet laborum aliquip in amet esse non ullamco
-              sit.
-            </p>
-            <a href="#order_delevery">Order delevry</a>
-          </div>
-        </div>
-      </section>
+     <Specials/>
       <section className="re-views">
         <h2>Testimonials</h2>
         <div className="re-view-items">
-          <div className="review-item">
-            <h3>rating</h3>
-            <div className="customer-info">
-              <img src={customerImage} alt="df" />
-              <h3>something</h3>
-            </div>
-            <p>comment</p>
-          </div>
-          <div className="review-item">
-            <h3>rating</h3>
-            <div className="customer-info">
-              <img src={customerImage} alt="df" />
-              <h3>something</h3>
-            </div>
-            <p>comment</p>
-          </div>
-          <div className="review-item">
-            <h3>rating</h3>
-            <div className="customer-info">
-              <img src={customerImage} alt="df" />
-              <h3>something</h3>
-            </div>
-            <p>comment</p>
-          </div>
-          <div className="review-item">
-            <h3>rating</h3>
-            <div className="customer-info">
-              <img src={customerImage} alt="df" />
-              <h3>something</h3>
-            </div>
-            <p>comment</p>
-          </div>
+        {
+          reviews.map(review=><CustomersSay
+          key={review.id}
+            imageUrl={review.user_photo} 
+            name={review.user_name}
+            comment={review.user_review}
+            rating={review.rating}
+            />)
+        }
         </div>
       </section>
       <section className="about-section">
@@ -138,6 +63,8 @@ const Main = () => {
         </div>
       </section>
     </main>
+ 
+   
    
   );
 };

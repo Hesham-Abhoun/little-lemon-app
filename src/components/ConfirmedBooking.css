@@ -1,0 +1,10 @@
+section.confirmed{
+    background-color: rgb(143, 193, 143);
+  font-size: 1.6rem;
+    padding: 12rem 4rem;
+    text-align: center;
+}
+section.confirmed p{
+    margin-top: 2rem;
+   font-size: .9rem;
+}

@@ -1,9 +1,10 @@
 import React from "react";
+import footerLogo  from "../assets/little_lemon_logo.jpg"
 import "./Footer.css"
 const Footer = () => {
   return (
     <footer>
-      <img src="" alt="ds" />
+      <img src={footerLogo} alt="little lemon logo" />
       <div >
         <h5>Doormat navigation</h5>
         <ul className="footer-links" >

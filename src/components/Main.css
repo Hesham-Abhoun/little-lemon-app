@@ -4,7 +4,9 @@ display: flex;
 flex-direction: column;
 gap: 2rem;
 }
+
 main section.hero {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,15 +17,25 @@ main section.hero {
   color: #fff;
 
 }
+main section.hero .hero-image {
+  position: absolute;
+  top: 2.2rem;
+  right: 8rem;
+}
+
+
 main section.hero img {
+ 
   width: 20rem;
   height: 24rem;
   border-radius: 10%;
+ 
 }
 main section.hero > .banner-text {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  margin-right: 16rem;
 }
 main section.hero > .banner-text h1 {
   font-size: 3rem;
@@ -37,7 +49,7 @@ main section.hero > .banner-text p {
   word-spacing: 0.2rem;
   line-height: 1.8rem;
 }
-main section.hero > .banner-text button {
+main section.hero > .banner-text .reserve_table{
   width: 12rem;
   padding: 0.6rem 0.6rem;
   margin-top: 6rem;
@@ -55,6 +67,14 @@ main section.special-items {
   flex-direction: column;
   gap: 0.8rem;
   padding: 1.2rem 12rem;
+}
+main section.special-items a {
+  color: #000;
+  font-weight: 500;
+}
+main section.special-items p {
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 main section.special-items .online-menu {
   padding: 0.6rem 2rem;
@@ -80,6 +100,7 @@ main section.special-items > .menu-items {
 }
 main section.special-items .menu-items > .menu-item {
   padding: 0.6rem;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -115,25 +136,37 @@ main section.re-views h2 {
 }
 
 main section.re-views .re-view-items {
-  height: 50%;
-  width: 100%;
+  
   padding: 0rem 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 .review-item {
-  padding: 0.6rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  background: rgb(228, 168, 194);
-}
-.customer-info {
-  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.7rem;
+  gap: 1.2rem;
+ 
+ background-color: gainsboro;
+}
+.review-item .rates{
+  display: flex;
+  justify-content: center;
+
+}
+.review-item .rates img{
+  width: 2rem;
+}
+.review-item img {
+  border-radius: 100%;
+  width: 6rem;
+}
+.review-item p{
+  text-overflow: ellipsis;
 }
 .customer-info img {
   width: 64px;

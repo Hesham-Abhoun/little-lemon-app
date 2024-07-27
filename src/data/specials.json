@@ -1,0 +1,23 @@
+[
+    {
+        "imageUrl": "images/greek_salad.jpg",
+        "name": "Greek Salad",
+        "price": 12.99,
+        "description": "Sunt eiusmod Lorem enim sint non culpa reprehenderit nulla occaecat. Enim proident duis ipsum occaecat consectetur reprehenderit sit in ipsum id non excepteur eiusmod. Non laboris ad laborum dolor eu in laboris. Ullamco ut aliqua velit dolore nisi sunt id. Eiusmod tempor eu magna incididunt eiusmod deserunt officia sint.",
+        "isDelevred": true
+    },
+    {
+        "imageUrl": "images/bruchetta.svg",
+        "name": "Bruchetta",
+        "price": 5.99,
+        "description": "Sunt eiusmod Lorem enim sint non culpa reprehenderit nulla occaecat. Enim proident duis ipsum occaecat consectetur reprehenderit sit in ipsum id non excepteur eiusmod. Non laboris ad laborum dolor eu in laboris. Ullamco ut aliqua velit dolore nisi sunt id. Eiusmod tempor eu magna incididunt eiusmod deserunt officia sint.",
+        "isDelevred": true
+    },
+    {
+        "imageUrl": "images/lemon_dessert.jpg",
+        "name": "Lemon Dessert",
+        "price": 5.00,
+        "description": "Sunt eiusmod Lorem enim sint non culpa reprehenderit nulla occaecat. Enim proident duis ipsum occaecat consectetur reprehenderit sit in ipsum id non excepteur eiusmod. Non laboris ad laborum dolor eu in laboris. Ullamco ut aliqua velit dolore nisi sunt id. Eiusmod tempor eu magna incididunt eiusmod deserunt officia sint.",
+        "isDelevred": true
+    }
+]
