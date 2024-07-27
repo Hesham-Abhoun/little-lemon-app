@@ -11,13 +11,43 @@ footer img{
     width: 16rem;
     height: 6rem;
 }
+footer h5{
+    font-size: .6rem;
+    margin: 1rem 0rem;
+}
 .footer-links , .contact-links, .social-media-links{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     color: gray;
 }
-
+footer ul{
+    list-style: none;
+}
  footer a{
     color: gray;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    footer{
+        width: 100vw;
+        height: 16rem;
+        padding: .4rem;
+        gap: .6rem;
+    }
+    footer img{
+       width: 4.6rem;
+       height: 0.6rem;
+
+    }
+    footer ul{
+      font-size: 0.8rem;
+        width: 4.6rem;
+        height: 0.6rem;
+     }
+     .footer-links , .contact-links, .social-media-links{
+     
+        gap: .6rem;
+        
+    }
 }

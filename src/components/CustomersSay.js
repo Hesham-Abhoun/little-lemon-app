@@ -15,7 +15,7 @@ const CustomersSay = ({ imageUrl, name, comment,rating,id}) => {
   return (
     <div className="review-item">
       <img src={imageUrl} alt="" />
-      <h3>{name}</h3>
+      <span>{name}</span>
       <p>{comment}</p>
       <div className="rates">
       {

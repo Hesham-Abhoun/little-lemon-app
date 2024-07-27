@@ -1,16 +1,29 @@
-header{
-    width: 100vw;
-    background-color: #fff;
+header {
+  position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.6rem 2rem;
-}
-header a{
-    color: black;
-    font-weight: 500;
-}
-header img{
-    width: 16rem;
-    height: 4rem;
-}
+    gap: 2rem;
+    padding: 1rem 8rem;
+    background-color: antiquewhite;
+    box-shadow: 1px 1px 0px rgb(210, 208, 208);
+    width: 100vw;
+    z-index: 10000;
+  }
+  
+  header img {
+    max-height: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+    position: fixed;
+    padding: 1rem 1.2rem;
+     display: flex;
+     justify-content: space-between;
+     height: 6rem;
+     width: 100%;
+     z-index: 10000;
+    }
+   
+  }
